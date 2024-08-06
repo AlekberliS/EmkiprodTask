@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmkiProd Project</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav></nav>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="./assets/images/logoemki.svg" alt="logo"></a>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__elements">
+                <li class="header__nav__elements-element"><a href="#">Home</a></li>
+                <li class="header__nav__elements-element"><a href="#">Events</a></li>
+                <li class="header__nav__elements-element"><a href="#">Blog</a></li>
+                <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
+                <li class="header__nav__elements-element"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="header__right">
+            <div class="header__right-lang">
+                <select name="language" id="language-select">
+                    <option value="en">EN</option>
+                    <option value="az">AZ</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+            <div class="header__right-buy">
+                <button class="buy__ticket">Buy Ticket</button>
+                <div class="buy__ticket-ticket">
+                    <img src="./assets/images/ticket-black.svg" alt="ticket">
+                </div>
+            </div>
+        </div>
     </header>
     <main></main>
     <footer></footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>
