@@ -1,9 +1,13 @@
 .container {
-    width: 85%;
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 90%;
+     margin: 0 auto;
+    /* max-width: 1440px; */
+   
+ }
+ /*
+.about{
+    flex-wrap: nowrap;
 }
-
 .row {
     display: flex;
 }
@@ -207,4 +211,4 @@
     .col-sm-12 {
         width: 100%;
     }
-}
+} */
