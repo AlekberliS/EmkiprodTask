@@ -22,11 +22,11 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
   
 
-    if (nav.classList.contains('open')) {
-        setOpacity(0.6);
-    } else {
-        setOpacity(1);
-    }
+    // if (nav.classList.contains('open')) {
+    //     setOpacity(0.6);
+    // } else {
+    //     setOpacity(1);
+    // }
 });
 
 
@@ -35,12 +35,12 @@ buyTicketButton.addEventListener('click', (e) => {
 
     if (buyTicketOpen.classList.contains('open')) {
         buyTicketOpen.style.display = 'block';
-        setOpacity(0.6);
+        // setOpacity(0.6);
     } else {
         buyTicketOpen.style.display = 'none';
-        setOpacity(1);
+        // setOpacity(1);
     }
-    e.stopPropagation();
+    // e.stopPropagation();
 });
 
 // Close modal 
@@ -55,8 +55,8 @@ document.addEventListener('click', (e) => {
 });
 
 // opacity fixing
-function setOpacity(value) {
-    headerElements.forEach(element => {
-        element.style.opacity = value;
-    });
-}
+// function setOpacity(value) {
+//     headerElements.forEach(element => {
+//         element.style.opacity = value;
+//     });
+// }

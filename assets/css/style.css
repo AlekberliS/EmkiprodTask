@@ -208,8 +208,8 @@ body{
     line-height: 84px;
     margin-bottom: 48px;
     font-weight: 600;
-    width: 623px;
-    height: 252px;
+    /* width: 623px;
+    height: 252px; */
     /* margin-left: 80px; */
     /* margin-top: 110px; */
 }
@@ -220,8 +220,8 @@ body{
     font-weight: 400;
     line-height: 24px;
     font-family: Euclid Circular A, sans-serif;
-    width: 546px;
-    height: 96px;
+    /* width: 546px;
+    height: 96px; */
     /* margin-left: 80px; */
 }
 

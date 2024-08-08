@@ -104,4 +104,38 @@ color: #151a30 !important;
 
   
 }
-  
+
+@media screen and (max-width: 1280px){
+    .elevate__main{
+        display: flex;
+        flex-direction: column;
+    }
+    .elevate_left{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 780px){
+    .elevate_left{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .elevate__main{
+      width: 100%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .elevate_h{
+        font-size: 34px;
+        line-height: 60px;
+    }
+    .buy__ticket-open{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px){
+   
+    .buy__ticket-open{
+        width: 340px;
+    }
+}
