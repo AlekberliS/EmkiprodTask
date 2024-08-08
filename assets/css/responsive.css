@@ -18,6 +18,7 @@
         width: 100%;
         padding: 10px ;
         color: #151a30;
+        border-radius: 0;
     }
     .header__logo img{
         width: 80px;

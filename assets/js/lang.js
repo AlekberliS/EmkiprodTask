@@ -1,5 +1,5 @@
 i18next.init({
-    lng: 'en', 
+    lng: 'en', // default lang in our website en,az ,ru -values in select options
     resources: {
         en: {
             translation: {
@@ -57,7 +57,7 @@ document.getElementById('language-select1').addEventListener('change', function(
         updateContent();
     });
 });
-
+// i18next.t() --  get text from resources
 function updateContent() {
     document.querySelector('.header__nav__elements-element:nth-child(1) a').textContent = i18next.t('home');
     document.querySelector('.header__nav__elements-element:nth-child(2) a').textContent = i18next.t('events');
