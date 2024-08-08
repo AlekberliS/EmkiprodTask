@@ -4,211 +4,104 @@
     /* max-width: 1440px; */
    
  }
- /*
-.about{
-    flex-wrap: nowrap;
+ .header__hamburger {
+    display: none;
 }
-.row {
-    display: flex;
+.bar__x{
+    display: none;
 }
-
-.d-flex {
-    display: flex;
+.lang__mobil{
+    display: none;
 }
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.flex-column {
-    flex-direction: column !important;
-}
-
-.justify-content-center {
-    justify-content: center !important;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-.mb-5 {
-    margin-bottom: 3rem !important;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
-}
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
-
-.col-lg-1 {
-    width: calc(100%/12*1);
-}
-
-.col-lg-2 {
-    width: calc(100%/12*2);
-}
-
-.col-lg-3 {
-    width: calc(100%/12*3);
-}
-
-.col-lg-4 {
-    width: calc(100%/12*4);
-}
-
-.col-lg-5 {
-    width: calc(100%/12*5);
-}
-
-.col-lg-6 {
-    width: calc(100%/12*6);
-}
-
-.col-lg-7 {
-    width: calc(100%/12*7);
-}
-
-.col-lg-8 {
-    width: calc(100%/12*8);
-}
-
-.col-lg-9 {
-    width: calc(100%/12*9);
-}
-
-.col-lg-10 {
-    width: calc(100%/12*10);
-}
-
-.col-lg-11 {
-    width: calc(100%/12*11);
-}
-
-.col-lg-12 {
-    width: calc(100%/12*12);
-}
-
-.col-lg-1,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12 {
-    box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media screen and (max-width:950px) {
-    .col-md-1 {
-        width: calc(100%/12*1);
-    }
-
-    .col-md-2 {
-        width: calc(100%/12*2);
-    }
-
-    .col-md-3 {
-        width: calc(100%/12*3);
-    }
-
-    .col-md-4 {
-        width: calc(100%/12*4);
-    }
-
-    .col-md-5 {
-        width: calc(100%/12*5);
-    }
-
-    .col-md-6 {
-        width: calc(100%/12*6);
-    }
-
-    .col-md-7 {
-        width: calc(100%/12*7);
-    }
-
-    .col-md-8 {
-        width: calc(100%/12*8);
-    }
-
-    .col-md-9 {
-        width: calc(100%/12*9);
-    }
-
-    .col-md-10 {
-        width: calc(100%/12*10);
-    }
-
-    .col-md-11 {
-        width: calc(100%/12*11);
-    }
-
-    .col-md-12 {
+@media screen and (max-width: 1080px) {
+    .header{
         width: 100%;
+        padding: 10px ;
+        color: #151a30;
     }
+    .header__logo img{
+        width: 80px;
+        margin-top: 16px;
+    }
+   .header__nav{
+    display: none;
+   }
+   
+   .header__right-lang{
+    display: none;
+   }
+   .buy__ticket{
+    display: none;
+   }
+
+    .header__hamburger {
+        display: block;
+        cursor: pointer;
+        margin: 12px 0;
+    }
+
+    .bar {
+        width: 34px;
+        height: 2px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .header__hamburger.open .bar {
+        background-color: transparent;
+    }
+    .header__hamburger.open .bar__x{
+        display: block;
+    }
+
+
+.bar__x {
+    display: none;
+    font-size: 24px;
+    margin-top: 8px;
+    color: #fff;
+}
+.lang__mobil{
+    display: block;
+    border: 1px solid #151a30;
+    width: 60px;
+    margin-left: -18px;
+    color: #151a30 !important;
+}
+.header__mobil.open {
+    padding: 40px;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 80px; 
+    width: 250px;
+    height: calc(100% - 80px);
+    background-color: #151a30;
+   color: #151a30 !important;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+.header__nav__elements{
+display: flex;
+flex-direction: column;
+color: #151a30 !important;
 }
 
-@media screen and (max-width:660px) {
-    .col-sm-1 {
-        width: calc(100%/12*1);
-    }
+.header__hamburger.open .bar {
+    display: none;
+}
 
-    .col-sm-2 {
-        width: calc(100%/12*2);
-    }
+.header__hamburger.open .bar__x {
+    display: block;
+}
 
-    .col-sm-3 {
-        width: calc(100%/12*3);
-    }
+.header__hamburger.open .header__mobil {
+    display: block;
+   
+}
 
-    .col-sm-4 {
-        width: calc(100%/12*4);
-    }
-
-    .col-sm-5 {
-        width: calc(100%/12*5);
-    }
-
-    .col-sm-6 {
-        width: calc(100%/12*6);
-    }
-
-    .col-sm-7 {
-        width: calc(100%/12*7);
-    }
-
-    .col-sm-8 {
-        width: calc(100%/12*8);
-    }
-
-    .col-sm-9 {
-        width: calc(100%/12*9);
-    }
-
-    .col-sm-10 {
-        width: calc(100%/12*10);
-    }
-
-    .col-sm-11 {
-        width: calc(100%/12*11);
-    }
-
-    .col-sm-12 {
-        width: 100%;
-    }
-} */
+  
+}
+  

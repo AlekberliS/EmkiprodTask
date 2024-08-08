@@ -51,6 +51,12 @@ document.getElementById('language-select').addEventListener('change', function()
         updateContent();
     });
 });
+document.getElementById('language-select1').addEventListener('change', function() {
+    const selectedLanguage = this.value;
+    i18next.changeLanguage(selectedLanguage, (err, t) => {
+        updateContent();
+    });
+});
 
 function updateContent() {
     document.querySelector('.header__nav__elements-element:nth-child(1) a').textContent = i18next.t('home');

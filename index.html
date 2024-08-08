@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmkiProd Project</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+
 </head>
 <body>
     <header class="header container">
+        <div class="header__hamburger">
+            <p class="bar"></p>
+            <p class="bar"></p>
+            <p class="bar__x">X</p>
+        </div>
         <div class="header__logo">
             <a href="#"><img src="./assets/images/logoemki.svg" alt="logo"></a>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav header__mobil">
+            <div class="header__right-lang lang__mobil">
+                <select name="language" id="language-select1">
+                    <option value="en">EN</option>
+                    <option value="az">AZ</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
             <ul class="header__nav__elements">
                 <li class="header__nav__elements-element"><a href="#">Home</a></li>
                 <li class="header__nav__elements-element"><a href="#">Events</a></li>
@@ -21,12 +35,6 @@
                 <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
                 <li class="header__nav__elements-element about"><a href="#">About us</a></li>
             </ul>
-
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
         <div class="header__right">
             <div class="header__right-lang">
@@ -41,9 +49,28 @@
                 <div class="buy__ticket-ticket">
                     <img src="./assets/images/ticket-black.svg" alt="ticket">
                 </div>
+              
+                
             </div>
         </div>
     </header>
+    <div class="buy__ticket-open buy__ticket-open-open" style="display: none;">
+        <div class="buy__ticket-openn">
+        <div class="buy__ticket-open__img">
+            <img src="./assets/images/kirach.png" alt="kirach">
+        </div>
+        <div class="buy__ticket-open__des">
+            <div class="open__des-head">
+                <h2 class="des-head-head">Kirach</h2>
+                <p class="des-head-price">49-199m</p>
+            </div>
+            <div class="open__des-des">
+                <div class="des-des-date">20.12.2024</div>
+                <div class="des-des-place"><span class="des-des-place-design"></span>H.A palace</div>
+            </div>
+        </div></div>
+    </div>
+    
     <main>
         <section class="main elevate__main ">
             <div class="elevate">
@@ -88,7 +115,8 @@
     </main>
     <footer></footer>
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/lang.js"></script>
+    <script src="./assets/js/app.js"></script>
+    
 </body>
 </html>
