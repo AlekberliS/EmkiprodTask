@@ -248,7 +248,7 @@ body{
     }
 }
 .hamburger {
-    display: none; /* Başlangıçta gizli */
+    display: none; 
     cursor: pointer;
   }
   
@@ -276,7 +276,6 @@ body{
     transform: translateY(-8px) rotate(-45deg);
   }
   
-  /* Responsive tasarım için */
   @media (min-width: 768px) {
     .hamburger {
       display: none;
