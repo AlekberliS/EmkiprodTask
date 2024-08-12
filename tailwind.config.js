@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'euclid': ['"Euclid Circular A"', 'sans-serif']
+      },
+      
+    },
   },
   plugins: [],
 }
