@@ -6,7 +6,58 @@
     font-family: "Montserrat", sans-serif;
 }
 body{
+    background-color: #101426 !important;
+    
 
-     background: linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);
+}
+.elevate__section{
+    background: linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);
+}
+.header{
+    position: sticky;
+    top: 0;
 
+}
+.blog{
+    /* padding: 10px; */
+    width: 86%;
+    margin: 0 auto;
+}
+.values{
+    
+       width: 86%;
+    margin: 0 auto;
+}
+.footer{
+    border-top: 1px solid #192038;;
+    
+}
+.footer__copywrite{
+    
+    width: 88% !important;
+    margin: 0 auto;
+}
+.footer__des{
+    width: 86%;
+    margin: 0 auto;
+    
+}
+/* .footer__des-logo img{
+  margin: 0 auto;
+} */
+.values__des{
+    background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+}
+.swiper{
+    width: 100%;
+    padding: -4px;
+}
+.swiper img{
+    width: 100%;
+}
+@media screen and (max-width:640px) {
+    .values{
+        width: 100%;
+    }
+    
 }

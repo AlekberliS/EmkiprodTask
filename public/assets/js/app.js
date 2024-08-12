@@ -49,3 +49,24 @@ document.addEventListener('click', (e) => {
 });
 
 
+
+var swiper = new Swiper(".mySwiper", {
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      540: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      400:{
+        slidesPerView:1,
+        spaceBetween:10,
+      }
+    },
+  });
