@@ -10,16 +10,14 @@ body{
     
 
 }
-.header{ 
-    width: 86%;
- margin: 0 auto;
-    position: fixed !important;
-    top: 0;
-}
-.elevate__section,.h-background{
+.elevate__section{
     background: linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);
 }
+.header{
+    position: sticky;
+    top: 0;
 
+}
 .blog{
     /* padding: 10px; */
     width: 86%;
@@ -34,7 +32,7 @@ body{
     border-top: 1px solid #192038;;
     
 }
-.footer__copywrite{
+.copywrite__des{
     
     width: 88% !important;
     margin: 0 auto;

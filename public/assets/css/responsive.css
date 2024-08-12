@@ -1,4 +1,4 @@
-.container {
+.containerr {
     width: 86%;
      margin: 0 auto;
     /* max-width: 1440px; */
@@ -13,7 +13,6 @@
 .lang__mobil{
     display: none;
 }
-
 @media screen and (max-width: 1080px) {
     .header{
         width: 100%;
@@ -124,11 +123,14 @@ color: #151a30 !important;
     .elevate__main{
       width: 100%;
     }
+    .footer__des-logo img{
+        margin: 0 auto;
+      } 
     
 }
 @media screen and (max-width: 600px){
-    .elevate_h{
-        font-size: 34px;
+    .elevate_h h1{
+        font-size: 34px !important;
         line-height: 60px;
     }
     .buy__ticket-open{
@@ -141,3 +143,5 @@ color: #151a30 !important;
         width: 340px;
     }
 }
+
+
