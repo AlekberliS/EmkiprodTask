@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/EmkiprodTask/input.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="header_container flex justify-between py-[24px] px-[20px] rounded-b-[15px] my-[0] mx-[60px] items-[center]">
+            <div class="header__hamburger">
+                <p class="bar"></p>
+                <p class="bar"></p>
+                <p class="bar__x"></p>
+            </div>
+            <div class="header__logo">
+                <a href="#"><img src="assets/images/logoemki.svg" alt="logo"></a>
+            </div>
+            <nav class="header__nav header__mobil">
+                <!--<div class="header__right-lang lang__mobil">
+                    <select name="language" id="language-select1">
+                        <option value="en">EN</option>
+                        <option value="az">AZ</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>-->
+                <div class="header__nav__elements text-white list-none flex justify-between pt-[20px] gap-[22px] font-medium">
+                    <li class="header__nav__elements-element"><a href="#">Home</a></li>
+                    <li class="header__nav__elements-element"><a href="#">Events</a></li>
+                    <li class="header__nav__elements-element"><a href="#">Blogs</a></li>
+                    <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
+                    <li class="header__nav__elements-element"><a href="#">About us</a></li>
+                </div>
+            </nav> 
+            <div class="header__right flex pt-[8px] gap-[8px]">
+                <div class="header__right-lang">
+                    <select name="language" id="language-select">
+                        <option value="en">EN</option>
+                        <option value="az">AZ</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+                <div class="header__right-buy flex gap-[2px]">
+                    <button class="buy__ticket h-[46px] bg-[white] rounded-[8px] py-[9px] px-[32px] text-[18px] ">Buy Ticket</button>
+                    <div class="buy__ticket-ticket w-[38px] h-[46px] rounded-[8px] py-[14px] px-[8px] bg-[white] ">
+                        <img src="./assets/images/ticket-black.svg" alt="ticket">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="AboutHome_container">
+                <div class="AboutHome_text absolute top-[168px] left-[80px] gap-6 w-[624px] h-[400px] text-white">
+                    <div class="AboutHome_title w-[623px]  ">
+                        <div class="AboutHome_title1 text-5xl font-[euclid] font-medium leading-[64px] ">
+                            Unleash Your Event's<br> Potential:
+                        </div>
+                        <div class="AboutHome_title2 text-5xl font-[euclid] font-medium leading-[64px] border-[1.2] stroke-text">
+                            Elevate Your Streaming <br> with Our Expertise!
+                        </div>
+                    </div>
+                    <div class="AboutHome_p w-[624px] text-[20px] font-normal leading-[28px] font-[euclid] ">
+                        Show your event to the world through any platform. We are <br>leaders in streaming and broadcast services for events, offering <br>consulting services and development of complete systems for our<br> clients in event broadcasting.
+                    </div>
+                </div>
+                <div class="video  absolute top-[190px] right-[40px] ">
+                    <video controls loop autoplay class="w-[500px] h-[350px] rounded-[16px]" src="assets/images/about_video.mp4"></video>
+
+                </div>
+                <div  class="TextOnVideo absolute left-[750px] top-[390px]">
+                    <div class="EmkiOnVideo w-[110px] h-[55px] font-[euclid] font-medium text-[40px] leading-[54.39px] text-[#F7F9FC]">Emki</div>
+                    <div class="ProdOnVideo absolute w-[244px] h-[49px] font-[euclid] font-medium text-[30px] leading-[20px] stroke-text tracking-wider">Production</div>
+                </div>
+            </div>        
+        </main>
+        <footer></footer>
+    </body>
 </html>
