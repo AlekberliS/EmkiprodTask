@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmkiProd Project</title>
 
+    <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
@@ -55,20 +57,54 @@
             </div>
         </div>
     </header>
-    <div class="container mx-auto p-4">
-        <h1 class="text-3xl font-bold mb-6">Events</h1>
-        <div class="flex justify-center space-x-4">
-            <!-- 1ci kart -->
-             <div class="relative w-64 h-96 bg-gray-500 rounded-xl overflow-hidden shadow-lg">
-                <img src="./assets/images/events1.jpeg" class="w-80 h-auto object-cover opacity-70">
-                <div class="absolute bottom-0 left-0 w-full p-4 bg-gray-800 bg-opacity-80">
-                    <p class="text-lg font-semibold">Kirach</p>
-                    <p class="text-sm">20.10.2024 • Heydar Aliyev Palace</p>
-                    <p class=" font-bold mt-2 text-red-500">49 - 199₼</p>
+    <section class="p-0 sm:p-2 lg:p-6 flex flex-col">
+        <h1 class="text-3xl font-semibold mb-6 p-0 text-white">Events</h1>
+    </section>
+    <!-- Events Container -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- First Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                <img src="./assets/images/events1.jpeg" alt="Kıraç Concert" class="w-1/4 h-56 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Kirach</h3>
+                    <p class="text-pink-500 font-semibold mt-2">49 - 199₼</p>
+                    <p class="text-gray-400 mt-2">20.10.2024 • Heydar Aliyev Palace</p>
                 </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <button class="hover: bg-white text-gray-900 font-bold py-2 px-4 rounded-lg shadow hover:bg-gray-200">Read More</button>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
                 </div>
-             </div>
-        </div>  
+            </div>
+            
+            <!-- Second Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/events1.jpeg" alt="Rafet El Roman Concert" class="w-1/2 h-56 object-cover">
+                <div class="p-4 relative">
+                    <h3 class="text-xl font-bold">Rafet El Roman</h3>
+                    <p class="text-pink-500 font-semibold mt-2">50 - 205₼</p>
+                    <p class="text-gray-400 mt-2">8 June • Heydar Aliyev Palace</p>
+                </div>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
+                </div>
+            </div>
+
+            <!-- Third Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/events1.jpeg" alt="Rafet El Roman Concert" class="w-1/2 h-56 object-cover">
+                <div class="p-4 relative">
+                    <h3 class="text-xl font-bold">Rafet El Roman</h3>
+                    <p class="text-pink-500 font-semibold mt-2">50 - 205₼</p>
+                    <p class="text-gray-400 mt-2">8 June • Heydar Aliyev Palace</p>
+                </div>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
+                </div>
+            </div>
+        </div>
     </div>
+</body>
