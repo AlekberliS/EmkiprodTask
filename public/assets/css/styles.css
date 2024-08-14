@@ -1174,3 +1174,33 @@ padding: 10px;
   }
 
 }
+
+.scroll-images::-webkit-scrollbar {
+  width: 0;
+}
+.scroll-images {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  overflow: auto;
+  scroll-behavior: auto;
+}
+.child  {
+  min-width: 700px;
+  height: 360px;
+  margin: 1px 10px;
+  cursor: pointer;
+  border: 4px solid #E32682;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.scroll-images-child {
+  width: 100%;
+  height: 100%;
+
+}
+.icon {
+  
+}
+
+
