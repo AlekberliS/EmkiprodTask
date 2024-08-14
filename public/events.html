@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmkiProd Project</title>
+
+    <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+<body>
+    <header class="header container">
+        <div class="header__hamburger">
+            <p class="bar"></p>
+            <p class="bar"></p>
+            <p class="bar__x">X</p>
+        </div>
+        <div class="header__logo">
+            <a href="#"><img src="./assets/images/logoemki.svg" alt="logo"></a>
+        </div>
+        <nav class="header__nav header__mobil">
+            <div class="header__right-lang lang__mobil">
+                <select name="language" id="language-select1">
+                    <option value="en">EN</option>
+                    <option value="az">AZ</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+            <ul class="header__nav__elements">
+                <li class="header__nav__elements-element"><a href="#">Home</a></li>
+                <li class="header__nav__elements-element"><a href="events.html">Events</a></li>
+                <li class="header__nav__elements-element"><a href="#">Blog</a></li>
+                <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
+                <li class="header__nav__elements-element about"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="header__right">
+            <div class="header__right-lang">
+                <select name="language" id="language-select">
+                    <option value="en">EN</option>
+                    <option value="az">AZ</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+            <div class="header__right-buy">
+                <button class="buy__ticket">Buy Ticket</button>
+                <div class="buy__ticket-ticket">
+                    <img src="./assets/images/ticket-black.svg" alt="ticket">
+                </div>
+              
+                
+            </div>
+        </div>
+    </header>
+    <section class="p-0 sm:p-2 lg:p-6 flex flex-col">
+        <h1 class="text-3xl font-semibold mb-6 p-0 text-white">Events</h1>
+    </section>
+    <!-- Events Container -->
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- First Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden group">
+                <img src="./assets/images/events1.jpeg" alt="Kıraç Concert" class="w-1/4 h-56 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold">Kirach</h3>
+                    <p class="text-pink-500 font-semibold mt-2">49 - 199₼</p>
+                    <p class="text-gray-400 mt-2">20.10.2024 • Heydar Aliyev Palace</p>
+                </div>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
+                </div>
+            </div>
+            
+            <!-- Second Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/events1.jpeg" alt="Rafet El Roman Concert" class="w-1/2 h-56 object-cover">
+                <div class="p-4 relative">
+                    <h3 class="text-xl font-bold">Rafet El Roman</h3>
+                    <p class="text-pink-500 font-semibold mt-2">50 - 205₼</p>
+                    <p class="text-gray-400 mt-2">8 June • Heydar Aliyev Palace</p>
+                </div>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
+                </div>
+            </div>
+
+            <!-- Third Event Card -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/events1.jpeg" alt="Rafet El Roman Concert" class="w-1/2 h-56 object-cover">
+                <div class="p-4 relative">
+                    <h3 class="text-xl font-bold">Rafet El Roman</h3>
+                    <p class="text-pink-500 font-semibold mt-2">50 - 205₼</p>
+                    <p class="text-gray-400 mt-2">8 June • Heydar Aliyev Palace</p>
+                </div>
+                <!-- Hover effect with button -->
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
+                    <button class="bg-white text-black py-2 px-4 rounded-lg">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

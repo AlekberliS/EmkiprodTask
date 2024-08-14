@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
                       <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
                           <img class="w-98 h-60 object-cover rounded-lg" src="${concert.img}" alt="concert image">
-                          <h2 class="absolute bottom-3 text-xl text-white font-semibold w-full text-center p-2 bg-gradient-to-t from-black to-transparent">
+                          <h2 class="absolute bottom-3 text-xl text-white font-semibold w-full text-center p-2 ">
                               ${concert.header.substring(0, 30)}
                           </h2>
                       </div>
