@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <p class="text-base md:text-lg text-textCol">${concertDetails.description}</p>
         `;
     } else {
-        // Handle case where no concert data is found in localStorage
+       
         const concertContainer = document.getElementById('concert-details');
         concertContainer.innerHTML = '<p>No concert details available.</p>';
     }

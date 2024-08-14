@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   </div>
               `;
 
-              // Attach click event directly to the swiperSlide
+             
               swiperSlide.addEventListener('click', function() {
                   window.location.href = `detail.html?concert=${encodeURIComponent(index)}`;
               });
