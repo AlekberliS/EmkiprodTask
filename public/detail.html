@@ -30,11 +30,11 @@
               </select>
           </div>
           <ul class="header__nav__elements">
-              <li class="header__nav__elements-element" data-i18n="home"><a href="./index.html">Home</a></li>
-              <li class="header__nav__elements-element" data-i18n="events"><a href="events.html">Events</a></li>
-              <li class="header__nav__elements-element" data-i18n="blog"><a href="./blog.html">Blog</a></li>
-              <li class="header__nav__elements-element" data-i18n="sponsors"><a href="#">Sponsors</a></li>
-              <li class="header__nav__elements-element about" data-i18n="about__us"><a href="#">About us</a></li>
+              <li class="header__nav__elements-element" ><a href="./index.html"data-i18n="home">Home</a></li>
+              <li class="header__nav__elements-element" ><a data-i18n="events" href="events.html">Events</a></li>
+              <li class="header__nav__elements-element" ><a data-i18n="blog" href="./blog.html">Blog</a></li>
+              <li class="header__nav__elements-element" ><a data-i18n="sponsors" href="#">Sponsors</a></li>
+              <li class="header__nav__elements-element" ><a data-i18n="about" href="#">About us</a></li>
           </ul>
       </nav>
       <div class="header__right">
@@ -115,7 +115,8 @@
         <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
           <p class="copywrite__des ">© emkiproduction.com 2023</p>
         </div>
-        <script type="module" src="./assets/js/lang.js"></script>
+        <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+        <script src="./assets/js/lang.js"></script>
       <script src="./assets/js/app.js"></script>
       <script src="./assets/js/detail.js"></script>
 </body>
