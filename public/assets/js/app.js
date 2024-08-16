@@ -116,5 +116,5 @@ var swiper = new Swiper(".mySwiper", {
   }
   function scrollr() {
     var right = document.querySelector(".scroll-images");
-    right.scrollBy(350,0);
+    right.scrollBy(-350,0);
   }
