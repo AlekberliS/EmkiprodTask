@@ -13,13 +13,17 @@ module.exports = {
     extend: {
       width: {
         '98': '360px',
-        
+        '86p':"86%",
+        '94p':"94%",
+        '70p':'70%',
+        '350':"330px",
       },
       borderWidth: {
         't-1': '1px', 
       },
       colors: {
         borderCol: '#192038',
+        textCol:'#c5cee0',
       },
     },
   },
