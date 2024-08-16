@@ -17,6 +17,7 @@ module.exports = {
         '94p':"94%",
         '70p':'70%',
         '350':"330px",
+        '90p':'90%',
       },
       borderWidth: {
         't-1': '1px', 
@@ -25,6 +26,7 @@ module.exports = {
         borderCol: '#192038',
         textCol:'#c5cee0',
       },
+      text
     },
   },
   plugins: [],

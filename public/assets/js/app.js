@@ -1,7 +1,7 @@
 const ticketImage = document.querySelector('.buy__ticket-ticket img');
 const buyTicketButton = document.querySelector('.header__right-buy');
 const buyTicketOpen = document.querySelector('.buy__ticket-open');
-const headerElements = document.querySelectorAll('.header > *:not(.buy__ticket-open)'); // header içindeki tüm öğeleri seç
+const headerElements = document.querySelectorAll('.header > *:not(.buy__ticket-open)'); 
 
 // Ticket image hover 
 document.querySelector('.header__right-buy').addEventListener('mouseover', () => {

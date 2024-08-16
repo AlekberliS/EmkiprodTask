@@ -71,4 +71,12 @@ document.getElementById('language-select').addEventListener('change', function(e
         if (err) return console.error('Language change error:', err);
         translateContent();
     });
+    
+});
+document.getElementById('language-select1').addEventListener('change', function(e) {
+    i18next.changeLanguage(e.target.value, function(err, t) {
+        if (err) return console.error('Language change error:', err);
+        translateContent();
+    });
+    
 });
