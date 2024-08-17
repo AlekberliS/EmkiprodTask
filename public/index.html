@@ -34,11 +34,11 @@
                 </select>
             </div>
             <ul class="header__nav__elements">
-                <li class="header__nav__elements-element"><a href="#">Home</a></li>
-                <li class="header__nav__elements-element"><a href="events.html">Events</a></li>
-                <li class="header__nav__elements-element"><a href="./blog.html">Blog</a></li>
-                <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
-                <li class="header__nav__elements-element about"><a href="#">About us</a></li>
+                <li class="header__nav__elements-element" ><a href="#"data-i18n="home">Home</a></li>
+                <li class="header__nav__elements-element" ><a data-i18n="events" href="events.html">Events</a></li>
+                <li class="header__nav__elements-element" ><a data-i18n="blog" href="./blog.html">Blog</a></li>
+                <li class="header__nav__elements-element" ><a data-i18n="sponsors" href="#">Sponsors</a></li>
+                <li class="header__nav__elements-element" ><a data-i18n="about" href="#">About us</a></li>
             </ul>
         </nav>
         <div class="header__right">
@@ -50,7 +50,7 @@
                 </select>
             </div>
             <div class="header__right-buy">
-                <button class="buy__ticket">Buy Ticket</button>
+                <button class="buy__ticket" data-i18n="buy_ticket">Buy Ticket</button>
                 <div class="buy__ticket-ticket">
                     <img src="./assets/images/ticket-black.svg" alt="ticket">
                 </div>
@@ -85,14 +85,14 @@
                 <div class="elevate_left">
                     <div class="elevate_text">
                         <div class="elevate_h">
-                            <h1>Elevate Your Concert Experience</h1>
+                            <h1 data-i18n="elevate_your_concert_experience">Elevate Your Concert Experience</h1>
                         </div>  
                         <div class="elevate_p">
-                            <p>Welcome to the ultimate destination for music enthusiasts and concert-goers! At EMKI Production, we're passionate about bringing you the very best in live music experiences. Whether you're a die-hard fan or a casual listener, we've got something special in store for you.</p>
+                            <p data-i18n="welcome_message">Welcome to the ultimate destination for music enthusiasts and concert-goers! At EMKI Production, we're passionate about bringing you the very best in live music experiences. Whether you're a die-hard fan or a casual listener, we've got something special in store for you.</p>
                         </div>
                         <div class="elevate_button">
                             <button class="events_button">
-                                <span class="events_button-des">Events</span>
+                                <span class="events_button-des" data-i18n="events_button">Events</span>
                                 <svg class="arrow_right" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                             </button>
                             
@@ -145,7 +145,7 @@
                   </div>
                   <div class="element__right ml-5 w-3/5">
                       <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Trust</div>
-                      <div class="right__des text-xs sm:text-sm  mt-2">We always give frank feedback and actionable advice to help you see the big picture.</div>
+                      <div class="right__des text-xs sm:text-sm  mt-2" data-i18n="trust">We always give frank feedback and actionable advice to help you see the big picture.</div>
                   </div>
               </div>
               <div class="values__des__element flex  w-full lg:w-1/2 ">
@@ -154,7 +154,7 @@
                   </div>
                   <div class="element__right ml-5 w-3/5">
                       <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Transparency</div>
-                      <div class="right__des text-sm mt-2">We help you understand things clearly by removing all the confusing information</div>
+                      <div class="right__des text-sm mt-2" data-i18n="transparency">We help you understand things clearly by removing all the confusing information</div>
                   </div>
               </div>              
                <div class="values__des__element flex w-full lg:w-1/2" >
@@ -163,7 +163,7 @@
                   </div>
                   <div class="element__right ml-5 w-3/5">
                       <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Innovation</div>
-                      <div class="right__des text-sm mt-2">Our events have been meticulously built and match the ambition of modern businesses.</div>
+                      <div class="right__des text-sm mt-2" data-i18n="innovation">Our events have been meticulously built and match the ambition of modern businesses.</div>
                   </div>
               </div>
               <div class="values__des__element flex w-full lg:w-1/2">
@@ -172,7 +172,7 @@
                   </div>
                   <div class="element__right ml-5 w-3/5">
                       <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Collaboration</div>
-                      <div class="right__des text-sm mt-2">We approach every engagement with confidence in our ability to forge a long-term relationships.</div>
+                      <div class="right__des text-sm mt-2" data-i18n="collaboration">We approach every engagement with confidence in our ability to forge a long-term relationships.</div>
                   </div>
               </div> 
           
@@ -229,11 +229,11 @@
         <p class="copywrite__des ">© emkiproduction.com 2023</p>
       </div>
     
-    
-
+     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-    <script src="./assets/js/lang.js"></script>
+
+    <script type="module" src="./assets/js/lang.js"></script>
     <script src="./assets/js/app.js"></script>
     
 </body>

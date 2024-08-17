@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 blogsContainer.appendChild(blogElement);
             });
 
-            // Add event listeners for "Read More" buttons
+            //  "Read More" buttons
             const readMoreButtons = document.querySelectorAll('.read-more-btn');
             readMoreButtons.forEach(button => {
                 button.addEventListener('click', function() {
