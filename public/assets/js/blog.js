@@ -89,5 +89,3 @@ document.addEventListener("DOMContentLoaded", function() {
         updateContent(selectedLanguage);
     });
 });
-
-

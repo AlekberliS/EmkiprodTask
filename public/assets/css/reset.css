@@ -33,7 +33,7 @@ body{
 }
 .values{
     
-       width: 86%;
+    width: 86%;
     margin: 0 auto;
 }
 .footer{
@@ -85,3 +85,6 @@ body{
      }
     
 }
+/* .firstsection {
+    background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+} */
