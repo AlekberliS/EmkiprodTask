@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        blogsContainer.innerHTML = ''; // Clear previous content
+        blogsContainer.innerHTML = ''; 
 
         if (index !== undefined && data[index]) {
             const firstItem = data[index];
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     blogsContainer.appendChild(blogElement);
                 });
 
-                // Add event listeners for "Read More" buttons
+               
                 document.querySelectorAll('.read-more-btn').forEach(button => {
                     button.addEventListener('click', function() {
                         const selectedPost = postTranslations[this.dataset.index];
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Event listeners for language selection
+    
     const languageSelect = document.getElementById('language-select');
     languageSelect.addEventListener('change', function() {
         const selectedLanguage = languageSelect.value;

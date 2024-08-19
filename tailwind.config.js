@@ -6,11 +6,6 @@ module.exports = {
       fontFamily: {
         'euclid': ['"Euclid Circular A"', 'sans-serif']
       },
-      
-    },
-
-
-    extend: {
       width: {
         '98': '360px',
         '86p':"86%",
@@ -20,7 +15,9 @@ module.exports = {
         '90p':'90%',
         '500':'500px',
         '186':'186px',
-
+      },
+      padding:{
+        'py20':'40px'
       },
       borderWidth: {
         't-1': '1px', 
@@ -31,9 +28,7 @@ module.exports = {
         sponsorbg:'#151a30',
         bgcol:'#101426',
       },
-      text
     },
   },
   plugins: [],
 }
-
