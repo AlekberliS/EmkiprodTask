@@ -319,6 +319,10 @@ body{
   animation: slideDown 10s linear infinite;
 }
 
+.AboutHome_title2{
+  font-family: Euclid, sans-serif;
+}
+
 @keyframes slideUp {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
