@@ -1,9 +1,13 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-   
     const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
 
+  
+    document.getElementById('language-select').value = savedLanguage;
+    document.getElementById('language-select1').value = savedLanguage;
+
     i18next.init({
-        lng: savedLanguage, 
+        lng: savedLanguage,
         resources: {
             en: {
                 translation: {
@@ -86,9 +90,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, function (err, t) {
         if (err) return console.error('i18next initialization error:', err);
-        translateContent(); 
+        translateContent();
     });
-
 
     function translateContent() {
         document.querySelectorAll('[data-i18n]').forEach(function (element) {
@@ -97,24 +100,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-  
-    document.getElementById('language-select').addEventListener('change', function (e) {
+    function changeLanguageAndSave(e) {
         const selectedLanguage = e.target.value;
-        localStorage.setItem('preferredLanguage', selectedLanguage); 
+        localStorage.setItem('preferredLanguage', selectedLanguage);
 
         i18next.changeLanguage(selectedLanguage, function (err, t) {
             if (err) return console.error('Language change error:', err);
             translateContent();
         });
-    });
+    }
 
-    document.getElementById('language-select1').addEventListener('change', function (e) {
-        const selectedLanguage = e.target.value;
-        localStorage.setItem('preferredLanguage', selectedLanguage); 
-
-        i18next.changeLanguage(selectedLanguage, function (err, t) {
-            if (err) return console.error('Language change error:', err);
-            translateContent();
-        });
-    });
+    document.getElementById('language-select').addEventListener('change', changeLanguageAndSave);
+    document.getElementById('language-select1').addEventListener('change', changeLanguageAndSave);
 });
