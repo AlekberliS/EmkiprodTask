@@ -52,6 +52,10 @@ body{
 /* .footer__des-logo img{
   margin: 0 auto;
 } */
+ .project__right img{
+    min-width: 330px;
+    margin: 0 auto;
+ }
 .values__des{
     background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
 }
@@ -62,12 +66,25 @@ body{
 .swiper img{
     width: 100%;
 }
+.haveproject{
+    background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
 @media screen and (max-width:640px) {
     .values{
         width: 100%;
     }
     
 }
-.firstsection {
-    background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4)) !important;
+@media screen and (min-width:1040px) {
+    .project__right img{
+        min-width: 400px;
+    width: 500px !important;
+      
+     }
+    
 }
+/* .firstsection {
+    background:  linear-gradient(257deg, #151a30, #211d4d 28%, #271630 70%, #0f1836), linear-gradient(0deg, rgba(21, 26, 48, .4), rgba(21, 26, 48, .4));
+} */
