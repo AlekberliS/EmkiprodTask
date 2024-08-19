@@ -49,6 +49,10 @@ body{
     margin: 0 auto;
     
 }
+.indHave .project{
+    background-color: #151a30;
+    border-radius: 16px;
+  }
 /* .footer__des-logo img{
   margin: 0 auto;
 } */

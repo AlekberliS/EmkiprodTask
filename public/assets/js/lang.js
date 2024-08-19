@@ -110,6 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
     document.getElementById('language-select').addEventListener('change', changeLanguageAndSave);
     document.getElementById('language-select1').addEventListener('change', changeLanguageAndSave);
+
 });

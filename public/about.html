@@ -58,21 +58,21 @@
         <main>
             <section class="firstsection">
                 <div class="AboutHome_container">
-                    <div class="AboutHome_text absolute top-[168px] left-[80px] gap-6 w-[624px] h-[400px] text-white">
-                        <div class="AboutHome_title w-[623px]  ">
-                            <div class="AboutHome_title1 text-5xl font-[euclid] font-medium leading-[64px] ">
+                    <div class="AboutHome_text absolute sm:top-[168px] sm:left-[80px] gap-6 sm:w-[624px] w-[300px] sm:h-[400px] text-white top-[179px] left-[16px]  h-[536px]">
+                        <div class="AboutHome_title sm:w-[623px] w-[300px] ">
+                            <div class="AboutHome_title1 text-5xl font-[euclid] font-medium leading-[64px]">
                                 Unleash Your Event's<br> Potential:
                             </div>
                             <div class="AboutHome_title2 text-5xl font-[euclid] font-medium leading-[64px] border-[1.2] stroke-text">
                                 Elevate Your Streaming <br> with Our Expertise!
                             </div>
                         </div>
-                        <div class="AboutHome_p w-[624px] text-[20px] font-normal leading-[28px] font-[euclid] ">
+                        <div class="AboutHome_p sm:w-[624px] text-[20px] font-normal leading-[28px] font-[euclid] w-[300px]">
                             Show your event to the world through any platform. We are <br>leaders in streaming and broadcast services for events, offering <br>consulting services and development of complete systems for our<br> clients in event broadcasting.
                         </div>
                     </div>
-                    <div class="video  absolute top-[190px] right-[40px] ">
-                        <video controls loop autoplay class="w-[500px] h-[350px] rounded-[16px]" src="assets/images/about_video.mp4"></video>
+                    <div class="video  absolute sm:top-[190px] sm:right-[40px] top-[850px] right-[170px] m-[10px]">
+                        <video controls loop autoplay class="sm:w-[500px] sm:h-[350px] rounded-[16px] w-[328px] h-[186px]" src="assets/images/about_video.mp4"></video>
     
                     </div>
                     <div  class="TextOnVideo absolute left-[750px] top-[390px]">
@@ -81,8 +81,8 @@
                     </div>
                 </div>      
             </section>
-            <section  class="OurEvents mt-[776px]">
-                <div class="OurEvents_header absolute top-[770px] left-[80px] font-medium text-[34px]  font-[euclid] text-white w-[175px] h-[40px]">Our Events</div>
+            <section  class="OurEvents sm:mt-[776px] mt-[1126px]">
+                <div class="OurEvents_header absolute sm:top-[770px] sm:left-[80px] top-[1070px] left-[24px] font-medium text-[34px]  font-[euclid] text-white w-[175px] h-[40px]">Our Events</div>
                 <div class="scroll-images flex relative  p-[10px] gap-[20px] justify-between">
                     <div class="child justify-between "><img class="scroll-images-child" src="assets/images/scroll-photo-1.jpeg" alt="photo"></div>
                     <button class="icon " onclick="scrolll()"><i class="fa-solid fa-angle-left "></i></button>
@@ -126,5 +126,23 @@
               </div>
             </div>
          </footer>
+         <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
+            <p class="copywrite__des ">© emkiproduction.com 2023</p>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+          <script type="module" src="./assets/js/lang.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+              var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  freeMode: true,
+                  pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                  },
+              });
+          </script>
     </body>
 </html>
