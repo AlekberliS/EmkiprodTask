@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
-<body style="background:linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);;">
-    <header class="header__section">
+<body >
+    <header class="header__section" style="background:linear-gradient(257deg, rgb(21, 26, 48) 0%, rgb(33, 29, 77) 28%, rgb(39, 22, 48) 70%, rgb(15, 24, 54) 100%), linear-gradient(0deg, rgba(21, 26, 48, 0.4) 0%, rgba(21, 26, 48, 0.4) 100%);;">
         <div class="header containerr">
           <div class="header__hamburger">
               <p class="bar"></p>
@@ -24,14 +24,14 @@
           </div>
           <nav class="header__nav header__mobil">
               <div class="header__right-lang lang__mobil">
-                  <select name="language" id="language-select1">
+                  <select name="language" id="language-select">
                       <option value="en">EN</option>
                       <option value="az">AZ</option>
                       <option value="ru">RU</option>
                   </select>
               </div>
               <ul class="header__nav__elements">
-                  <li class="header__nav__elements-element" ><a href="#"data-i18n="home">Home</a></li>
+                  <li class="header__nav__elements-element" ><a href="./index.html"data-i18n="home">Home</a></li>
                   <li class="header__nav__elements-element" ><a data-i18n="events" href="events.html">Events</a></li>
                   <li class="header__nav__elements-element" ><a data-i18n="blog" href="./blog.html">Blog</a></li>
                   <li class="header__nav__elements-element" ><a data-i18n="sponsors" href="./sponsors.html">Sponsors</a></li>
@@ -40,7 +40,7 @@
           </nav>
           <div class="header__right">
               <div class="header__right-lang">
-                  <select name="language" id="language-select">
+                  <select name="language" id="language-select1">
                       <option value="en">EN</option>
                       <option value="az">AZ</option>
                       <option value="ru">RU</option>
@@ -75,13 +75,127 @@
         </div></div>
     </div>
      </header>
-     <section class="haveproject">
-        <div class="project flex">
+     <section class="haveproject ">
+        <!-- <div class="project w-86p px-2 sm:px-8  py-12 mx-auto   flex flex-col xl:flex-row gap-6">
                   <div class="project__left text-white">
-                    <h1 class="text-4xl font-semibold">PROYEKTİNİZ VAR?</h1>
-                    <p class="">Tədbirinizi istənilən platforma vasitəsilə dünyaya göstərin. Biz hadisələr üçün axın və yayım xidmətləri, konsaltinq xidmətləri təklif etmək və hadisələrin yayımında müştərilərimiz üçün tam sistemlərin işlənib hazırlanması sahəsində liderik. Tədbirinizi istənilən platforma vasitəsilə dünyaya göstərin. Biz hadisələr üçün axın və yayım xidmətləri, konsaltinq xidmətləri təklif etmək və hadisələrin yayımında müştərilərimiz üçün tam sistemlərin işlənib hazırlanması sahəsində liderik.</p>
+                    <h1 class="text-3xl  md:text-5xl font-semibold mb-6">Have A Project?</h1>
+                    <p class="font-medium leading-7">
+                        Show your event to the world through any platform. 
+                        We are leaders in streaming and broadcast services for events, offering consulting services
+                         and development of complete systems for our clients in event broadcasting. Show your event
+                          to the world through any platform. We are leaders in streaming and broadcast services for 
+                          events, offering consulting services and development of complete systems for our clients
+                           in event broadcasting.</p>
                   </div>
-        </div>
+                  <div class="project__right">
+                    <img src="./assets/images/project.png" class="rounded-lg" alt="project">
+                  </div>
+        </div> -->
+        <div id="projectSectionContainer"></div>
+
      </section>
+     <section class="sponsors bg-bgcol">
+        <div class="sponsor  w-86p p-6 mx-auto my-4">
+              <h1 class="text-3xl font-semibold mb-6" data-i18n="sponsors">Sponsors</h1>
+              <div class="sponsors__img flex gap-4 p-6">
+                <div class="sponsors__img-fr bg-sponsorbg rounded-lg p-8 w-186 h-186">
+                    <img src="./assets/images/sp1.png" class="w-full h-full" alt="sponsors">
+                </div>
+                
+                <div class="sponsors__img-fr p-8 rounded-lg bg-sponsorbg w-186 h-186">
+                 <img src="./assets/images/sp2.png" class="w-full h-full"  alt="sponsors">   
+                </div>
+                
+              </div>
+            </div>
+     </section>
+     <section class="values  text-white">
+        <div class="values__head mb-6">
+            <h1 class="text-4xl font-semibold px-6 sm:px-0 lg:p-6" data-i18n="value">Our values</h1>
+        </div>
+        <div class="values__des flex flex-wrap mb-4 md:mb-10 justify-between p-4 sm:p-8 rounded-2xl">
+            <div class="values__des__element flex w-full lg:w-1/2 ">
+                <div class="element__left">
+                    <img src="./assets/images/Group233.svg" alt="trust" class="w-28 lg:w-36" >
+                </div>
+                <div class="element__right ml-5 w-3/5">
+                    <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="trusth">Trust</div>
+                    <div class="right__des text-xs sm:text-sm  mt-2" data-i18n="trust">We always give frank feedback and actionable advice to help you see the big picture.</div>
+                </div>
+            </div>
+            <div class="values__des__element flex  w-full lg:w-1/2 ">
+                <div class="element__left">
+                    <img src="./assets/images/Group237.svg" alt="transparency" class="w-28 lg:w-36">
+                </div>
+                <div class="element__right ml-5 w-3/5">
+                    <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="transparencyh">Transparency</div>
+                    <div class="right__des text-sm mt-2" data-i18n="transparency">We help you understand things clearly by removing all the confusing information</div>
+                </div>
+            </div>              
+             <div class="values__des__element flex w-full lg:w-1/2" >
+                <div class="element__left">
+                    <img src="./assets/images/Group238.svg" alt="innovation" class="w-28 lg:w-36">
+                </div>
+                <div class="element__right ml-5 w-3/5">
+                    <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600"data-i18n="innovationh">Innovation</div>
+                    <div class="right__des text-sm mt-2" data-i18n="innovation">Our events have been meticulously built and match the ambition of modern businesses.</div>
+                </div>
+            </div>
+            <div class="values__des__element flex w-full lg:w-1/2">
+                <div class="element__left">
+                    <img src="./assets/images/Group239.svg" alt="collaboration"  class="w-28 lg:w-36">
+                </div>
+                <div class="element__right ml-5 w-3/5">
+                    <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="collaborationh">Collaboration</div>
+                    <div class="right__des text-sm mt-2" data-i18n="collaboration">We approach every engagement with confidence in our ability to forge a long-term relationships.</div>
+                </div>
+            </div> 
+        
+      </div>
+    </section>
+    <footer class="footer mt-24 py-2 md:py-6">
+        <div class="footer__des flex flex-col w-4/5 md:w-5/6 md:flex-row justify-between">
+          <div class="footer__des-logo w-full md:w-2/6 mb-10 md:mb-20 ">
+            <img src="./assets/images/logoemki.svg" class="my-0 md:mx-0" alt="logo">
+          </div>
+          <div class="footer__des-des flex w-full  md:font-normal md:w-4/6 mx-auto mb-6  pr-0 justify-between flex-wrap">
+            <div class="footer__des-des-social mb-2">
+              <h4 class="mb-2 font-semibold" data-i18n="social">Social</h4>
+              <div class="des__link">
+                <a href="https://www.facebook.com/emkiproduction/"><i class="fa-brands fa-square-facebook"></i><span> Facebook</span></a>
+              </div>
+              <div class="des__link">
+                <a href="https://www.instagram.com/emkiproduction/"><i class="fa-brands fa-instagram"></i><span> Instagram</span></a>
+              </div>
+            </div>
+            <div class="footer__des-des-information  mb-2">
+              <h4 class="mb-2 font-semibold" data-i18n="information">Information</h4>
+              <div class="des__link">
+                <a href="./about.html"data-i18n="about">About us</a>
+              </div>
+              <div class="des__link">
+                <a href="./sponsors.html"data-i18n="sponsors">Sponsor</a>
+              </div>
+            </div>
+            <div class="footer__des-des-contact  mb-2">
+              <h4 class="mb-2 font-semibold"data-i18n="contact">Contact</h4>
+              <div class="des__link">
+                <a href=""><i class="fa-regular fa-envelope"></i> office@emki.az</a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+     <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
+        <p class="copywrite__des ">© emkiproduction.com 2023</p>
+      </div>
+      <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+<script src="./assets/js/app.js"></script>
+      <script type="module" src="./assets/js/lang.js"></script>
+<script src="./assets/js/sponsors.js"></script>
+
+
 </body>
+
+
 </html>

@@ -134,15 +134,15 @@
         </section>
         <section class="values  text-white">
           <div class="values__head mb-6">
-              <h1 class="text-4xl font-semibold px-6 sm:px-0 lg:p-6">Our values</h1>
+              <h1 class="text-4xl font-semibold px-6 sm:px-0 lg:p-6" data-i18n="value">Our values</h1>
           </div>
-          <div class="values__des flex flex-wrap mb-4 md:mb-10 justify-between p-4 sm:p-8 rounded">
+          <div class="values__des flex flex-wrap mb-4 md:mb-10 justify-between p-4 sm:p-8 rounded-2xl">
               <div class="values__des__element flex w-full lg:w-1/2 ">
                   <div class="element__left">
                       <img src="./assets/images/Group233.svg" alt="trust" class="w-28 lg:w-36" >
                   </div>
                   <div class="element__right ml-5 w-3/5">
-                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Trust</div>
+                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="trusth">Trust</div>
                       <div class="right__des text-xs sm:text-sm  mt-2" data-i18n="trust">We always give frank feedback and actionable advice to help you see the big picture.</div>
                   </div>
               </div>
@@ -151,7 +151,7 @@
                       <img src="./assets/images/Group237.svg" alt="transparency" class="w-28 lg:w-36">
                   </div>
                   <div class="element__right ml-5 w-3/5">
-                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Transparency</div>
+                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="transparencyh">Transparency</div>
                       <div class="right__des text-sm mt-2" data-i18n="transparency">We help you understand things clearly by removing all the confusing information</div>
                   </div>
               </div>              
@@ -160,7 +160,7 @@
                       <img src="./assets/images/Group238.svg" alt="innovation" class="w-28 lg:w-36">
                   </div>
                   <div class="element__right ml-5 w-3/5">
-                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Innovation</div>
+                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600"data-i18n="innovationh">Innovation</div>
                       <div class="right__des text-sm mt-2" data-i18n="innovation">Our events have been meticulously built and match the ambition of modern businesses.</div>
                   </div>
               </div>
@@ -169,7 +169,7 @@
                       <img src="./assets/images/Group239.svg" alt="collaboration"  class="w-28 lg:w-36">
                   </div>
                   <div class="element__right ml-5 w-3/5">
-                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600">Collaboration</div>
+                      <div class="right__head font-semibold mt-2 pb-1 border-b border-pink-600" data-i18n="collaborationh">Collaboration</div>
                       <div class="right__des text-sm mt-2" data-i18n="collaboration">We approach every engagement with confidence in our ability to forge a long-term relationships.</div>
                   </div>
               </div> 
@@ -188,6 +188,7 @@
             </div>
 
         </div>
+       
     </section>
     </main>
     <footer class="footer mt-24 py-2 md:py-6">
@@ -197,7 +198,7 @@
         </div>
         <div class="footer__des-des flex w-full  md:font-normal md:w-4/6 mx-auto mb-6  pr-0 justify-between flex-wrap">
           <div class="footer__des-des-social mb-2">
-            <h4 class="mb-2 font-semibold">Social</h4>
+            <h4 class="mb-2 font-semibold" data-i18n="social">Social</h4>
             <div class="des__link">
               <a href="https://www.facebook.com/emkiproduction/"><i class="fa-brands fa-square-facebook"></i><span> Facebook</span></a>
             </div>
@@ -206,16 +207,16 @@
             </div>
           </div>
           <div class="footer__des-des-information  mb-2">
-            <h4 class="mb-2 font-semibold">Information</h4>
+            <h4 class="mb-2 font-semibold" data-i18n="information">Information</h4>
             <div class="des__link">
-              <a href="#">About us</a>
+              <a href="./about.html"data-i18n="about">About us</a>
             </div>
             <div class="des__link">
-              <a href="">Sponsor</a>
+              <a href="./sponsors.html"data-i18n="sponsors">Sponsor</a>
             </div>
           </div>
           <div class="footer__des-des-contact  mb-2">
-            <h4 class="mb-2 font-semibold">Contact</h4>
+            <h4 class="mb-2 font-semibold"data-i18n="contact">Contact</h4>
             <div class="des__link">
               <a href=""><i class="fa-regular fa-envelope"></i> office@emki.az</a>
             </div>
@@ -223,15 +224,16 @@
         </div>
       </div>
    </footer>
-      <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
-        <p class="copywrite__des ">© emkiproduction.com 2023</p>
-      </div>
+   <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
+      <p class="copywrite__des ">© emkiproduction.com 2023</p>
+    </div>
     
      
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
-
-    <script type="module" src="./assets/js/lang.js"></script>
+      <script src="./assets/js/lang.js"></script>
+<script src="./assets/js/swipper.js"></script>
+  
     <script src="./assets/js/app.js"></script>
     
 </body>
