@@ -80,7 +80,7 @@
     width: 250px;
     height: calc(100% - 80px);
     background-color: #151a30;
-   color: #151a30 !important;
+    color: #151a30 !important;
     transition: left 0.3s ease;
     z-index: 1;
 }
@@ -143,5 +143,4 @@ color: #151a30 !important;
         width: 340px;
     }
 }
-
 

@@ -7,7 +7,11 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/lang.js"></script>
     </head>
     <body>
         <header class="header_container flex justify-between py-[24px] px-[20px] rounded-b-[15px] my-[0] mx-[60px] items-[center]">
@@ -52,30 +56,93 @@
             </div>
         </header>
         <main>
-            <div class="AboutHome_container">
-                <div class="AboutHome_text absolute top-[168px] left-[80px] gap-6 w-[624px] h-[400px] text-white">
-                    <div class="AboutHome_title w-[623px]  ">
-                        <div class="AboutHome_title1 text-5xl font-[euclid] font-medium leading-[64px] ">
-                            Unleash Your Event's<br> Potential:
+            <section class="firstsection">
+                <div class="AboutHome_container">
+                    <div class="AboutHome_text absolute sm:top-[168px] sm:left-[80px] gap-6 sm:w-[624px] w-[300px] sm:h-[400px] text-white top-[179px] left-[16px]  h-[536px]">
+                        <div class="AboutHome_title sm:w-[623px] w-[300px] ">
+                            <div class="AboutHome_title1 text-5xl font-[euclid] font-medium leading-[64px]">
+                                Unleash Your Event's<br> Potential:
+                            </div>
+                            <div class="AboutHome_title2 text-5xl font-[euclid] font-medium leading-[64px] border-[1.2] stroke-text">
+                                Elevate Your Streaming <br> with Our Expertise!
+                            </div>
                         </div>
-                        <div class="AboutHome_title2 text-5xl font-[euclid] font-medium leading-[64px] border-[1.2] stroke-text">
-                            Elevate Your Streaming <br> with Our Expertise!
+                        <div class="AboutHome_p sm:w-[624px] text-[20px] font-normal leading-[28px] font-[euclid] w-[300px]">
+                            Show your event to the world through any platform. We are <br>leaders in streaming and broadcast services for events, offering <br>consulting services and development of complete systems for our<br> clients in event broadcasting.
                         </div>
                     </div>
-                    <div class="AboutHome_p w-[624px] text-[20px] font-normal leading-[28px] font-[euclid] ">
-                        Show your event to the world through any platform. We are <br>leaders in streaming and broadcast services for events, offering <br>consulting services and development of complete systems for our<br> clients in event broadcasting.
+                    <div class="video  absolute sm:top-[190px] sm:right-[40px] top-[850px] right-[170px] m-[10px]">
+                        <video controls loop autoplay class="sm:w-[500px] sm:h-[350px] rounded-[16px] w-[328px] h-[186px]" src="assets/images/about_video.mp4"></video>
+    
                     </div>
+                    <div  class="TextOnVideo absolute left-[750px] top-[390px]">
+                        <div class="EmkiOnVideo w-[110px] h-[55px] font-[euclid] font-medium text-[40px] leading-[54.39px] text-[#F7F9FC]">Emki</div>
+                        <div class="ProdOnVideo absolute w-[244px] h-[49px] font-[euclid] font-medium text-[30px] leading-[20px] stroke-text tracking-wider">Production</div>
+                    </div>
+                </div>      
+            </section>
+            <section  class="OurEvents sm:mt-[776px] mt-[1126px]">
+                <div class="OurEvents_header absolute sm:top-[770px] sm:left-[80px] top-[1070px] left-[24px] font-medium text-[34px]  font-[euclid] text-white w-[175px] h-[40px]">Our Events</div>
+                <div class="scroll-images flex relative  p-[10px] gap-[20px] justify-between">
+                    <div class="child justify-between "><img class="scroll-images-child" src="assets/images/scroll-photo-1.jpeg" alt="photo"></div>
+                    <button class="icon " onclick="scrolll()"><i class="fa-solid fa-angle-left "></i></button>
+                    <div class="child justify-between  "><img class="scroll-images-child" src="assets/images/scroll-photo-2.jpeg" alt="photo"></div>
+                    <button class="icon" onclick="scrollr()"><i class="fa-solid fa-angle-right"></i></button>
+                    <div class="child justify-between  "><img class="scroll-images-child" src="assets/images/scroll-photo-1.jpeg" alt="photo"></div>
                 </div>
-                <div class="video  absolute top-[190px] right-[40px] ">
-                    <video controls loop autoplay class="w-[500px] h-[350px] rounded-[16px]" src="assets/images/about_video.mp4"></video>
 
-                </div>
-                <div  class="TextOnVideo absolute left-[750px] top-[390px]">
-                    <div class="EmkiOnVideo w-[110px] h-[55px] font-[euclid] font-medium text-[40px] leading-[54.39px] text-[#F7F9FC]">Emki</div>
-                    <div class="ProdOnVideo absolute w-[244px] h-[49px] font-[euclid] font-medium text-[30px] leading-[20px] stroke-text tracking-wider">Production</div>
-                </div>
-            </div>        
+            </section>  
         </main>
-        <footer></footer>
+        <footer class="footer mt-[200px] py-2 md:py-6">
+            <div class="footer__des flex flex-col w-4/5 md:w-5/6 md:flex-row justify-between">
+              <div class="footer__des-logo w-full md:w-2/6 mb-10 md:mb-20 ">
+                <img src="./assets/images/logoemki.svg" class="my-0 md:mx-0" alt="logo">
+              </div>
+              <div class="footer__des-des flex w-full  md:font-normal md:w-4/6 mx-auto mb-6  pr-0 justify-between flex-wrap">
+                <div class="footer__des-des-social mb-2">
+                  <h4 class="mb-2 font-semibold">Social</h4>
+                  <div class="des__link">
+                    <a href="https://www.facebook.com/emkiproduction/"><i class="fa-brands fa-square-facebook"></i><span> Facebook</span></a>
+                  </div>
+                  <div class="des__link">
+                    <a href="https://www.instagram.com/emkiproduction/"><i class="fa-brands fa-instagram"></i><span> Instagram</span></a>
+                  </div>
+                </div>
+                <div class="footer__des-des-information  mb-2">
+                  <h4 class="mb-2 font-semibold">Information</h4>
+                  <div class="des__link">
+                    <a href="#">About us</a>
+                  </div>
+                  <div class="des__link">
+                    <a href="">Sponsor</a>
+                  </div>
+                </div>
+                <div class="footer__des-des-contact  mb-2">
+                  <h4 class="mb-2 font-semibold">Contact</h4>
+                  <div class="des__link">
+                    <a href=""><i class="fa-regular fa-envelope"></i> office@emki.az</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </footer>
+         <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
+            <p class="copywrite__des ">© emkiproduction.com 2023</p>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+          <script type="module" src="./assets/js/lang.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+              var swiper = new Swiper(".mySwiper", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  freeMode: true,
+                  pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                  },
+              });
+          </script>
     </body>
 </html>
