@@ -14,229 +14,78 @@
 
 </head>
 <body>
-    <header class="header container">
-        <div class="header__hamburger">
-            <p class="bar"></p>
-            <p class="bar"></p>
-            <p class="bar__x">X</p>
+    <header class="header__section">
+        <div class="header containerr">
+          <div class="header__hamburger">
+              <p class="bar"></p>
+              <p class="bar"></p>
+              <p class="bar__x">X</p>
+          </div>
+          <div class="header__logo">
+              <a href="#"><img src="./assets/images/logoemki.svg" alt="logo"></a>
+          </div>
+          <nav class="header__nav header__mobil">
+              <div class="header__right-lang lang__mobil">
+                  <select name="language" id="language-select1">
+                      <option value="en">EN</option>
+                      <option value="az">AZ</option>
+                      <option value="ru">RU</option>
+                  </select>
+              </div>
+              <ul class="header__nav__elements">
+                  <li class="header__nav__elements-element" ><a href="./index.html"data-i18n="home">Home</a></li>
+                  <li class="header__nav__elements-element" ><a data-i18n="events" href="./events.html">Events</a></li>
+                  <li class="header__nav__elements-element" ><a data-i18n="blog" href="./blog.html">Blog</a></li>
+                  <li class="header__nav__elements-element" ><a data-i18n="sponsors" href="./sponsors.html">Sponsors</a></li>
+                  <li class="header__nav__elements-element" ><a data-i18n="about" href="./about.html">About us</a></li>
+              </ul>
+          </nav>
+          <div class="header__right">
+              <div class="header__right-lang">
+                  <select name="language" id="language-select">
+                      <option value="en">EN</option>
+                      <option value="az">AZ</option>
+                      <option value="ru">RU</option>
+                  </select>
+              </div>
+              <div class="header__right-buy">
+                  <button class="buy__ticket" data-i18n="buy_ticket">Buy Ticket</button>
+                  <div class="buy__ticket-ticket">
+                      <img src="./assets/images/ticket-black.svg" alt="ticket">
+                  </div>
+                
+                  
+              </div>
+          </div>
         </div>
-        <div class="header__logo">
-            <a href="#"><img src="./assets/images/logoemki.svg" alt="logo"></a>
+    
+   
+    <div class="buy__ticket-open buy__ticket-open-open" style="display: none;">
+        <div class="buy__ticket-openn">
+        <div class="buy__ticket-open__img">
+            <img src="./assets/images/kirach.png" alt="kirach">
         </div>
-        <nav class="header__nav header__mobil">
-            <div class="header__right-lang lang__mobil">
-                <select name="language" id="language-select1">
-                    <option value="en">EN</option>
-                    <option value="az">AZ</option>
-                    <option value="ru">RU</option>
-                </select>
+        <div class="buy__ticket-open__des">
+            <div class="open__des-head">
+                <h2 class="des-head-head">Kirach</h2>
+                <p class="des-head-price">49-199m</p>
             </div>
-            <ul class="header__nav__elements">
-                <li class="header__nav__elements-element"><a href="#">Home</a></li>
-                <li class="header__nav__elements-element"><a href="events.html">Events</a></li>
-                <li class="header__nav__elements-element"><a href="#">Blog</a></li>
-                <li class="header__nav__elements-element"><a href="#">Sponsors</a></li>
-                <li class="header__nav__elements-element about"><a href="#">About us</a></li>
-            </ul>
-        </nav>
-        <div class="header__right">
-            <div class="header__right-lang">
-                <select name="language" id="language-select">
-                    <option value="en">EN</option>
-                    <option value="az">AZ</option>
-                    <option value="ru">RU</option>
-                </select>
+            <div class="open__des-des">
+                <div class="des-des-date">20.12.2024</div>
+                <div class="des-des-place"><span class="des-des-place-design"></span>H.A palace</div>
             </div>
-            <div class="header__right-buy">
-                <button class="buy__ticket">Buy Ticket</button>
-                <div class="buy__ticket-ticket">
-                    <img src="./assets/images/ticket-black.svg" alt="ticket">
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="p-0 sm:p-2 lg:p-6 flex flex-col">
+        </div></div>
+    </div>
+     </header>
+ 
+    <section class="blog w-86p p-0 sm:p-2 lg:p-6 flex flex-col">
         <h1 class="text-3xl font-semibold mb-6 p-0 text-white">Events</h1>
-        <hr>
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="" >
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      
+        <div class="events-container flex  flex-wrap gap-2 p-4">
             </div>
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class=" grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class=" grid grid-cols-1 md:grid-cols-3 gap-10">
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class=" p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="p:0 sm:p-2">
-                <div class="">
-                    <div class="swiper-slide flex items-center p-0 flex-wrap gap-10 justify-center min-w-[300px]">
-                        <div class="relative flex flex-col w-98 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
-                            <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
-                                <img class="w-98 h-60 object-cover rounded-lg" src="./assets/images/events1.jpeg" alt="">
-                            </div>
-                            <p class="py-3 px-2 text-white text-sm opacity-95 bg-transparent rounded-b-lg group-hover:text-black group-hover:bg-white transition-colors duration-300">
-                                <span class="text-xl font-bold">Kirach</span>
-                                <br>
-                                07.04.2024 • Heydar Aliyev Palace
-                            </p>
-                            <div class="absolute w-36 h-10 rounded m-24 inset-0 flex items-center justify-center text-lg font-bold uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300 group-hover:bg-white group-hover:text-black">
-                                Read More
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
     </section>
-
+ 
     <!-- Footer -->
     <footer class="footer mt-24 py-2 md:py-6">
         <div class="footer__des flex flex-col w-4/5 md:w-5/6 md:flex-row justify-between">
@@ -245,7 +94,7 @@
           </div>
           <div class="footer__des-des flex w-full  md:font-normal md:w-4/6 mx-auto mb-6  pr-0 justify-between flex-wrap">
             <div class="footer__des-des-social mb-2">
-              <h4 class="mb-2 font-semibold">Social</h4>
+              <h4 class="mb-2 font-semibold" data-i18n="social">Social</h4>
               <div class="des__link">
                 <a href="https://www.facebook.com/emkiproduction/"><i class="fa-brands fa-square-facebook"></i><span> Facebook</span></a>
               </div>
@@ -254,26 +103,30 @@
               </div>
             </div>
             <div class="footer__des-des-information  mb-2">
-              <h4 class="mb-2 font-semibold">Information</h4>
+              <h4 class="mb-2 font-semibold" data-i18n="information">Information</h4>
               <div class="des__link">
-                <a href="#">About us</a>
+                <a href="./about.html"data-i18n="about">About us</a>
               </div>
               <div class="des__link">
-                <a href="">Sponsor</a>
+                <a href="./sponsors.html"data-i18n="sponsors">Sponsor</a>
               </div>
             </div>
             <div class="footer__des-des-contact  mb-2">
-              <h4 class="mb-2 font-semibold">Contact</h4>
+              <h4 class="mb-2 font-semibold"data-i18n="contact">Contact</h4>
               <div class="des__link">
                 <a href=""><i class="fa-regular fa-envelope"></i> office@emki.az</a>
               </div>
             </div>
           </div>
         </div>
-    </footer>
+     </footer>
+     <div class="footer__copywrite font-mono p-6  mx-auto" style="border-top: 1px solid #192038;">
+        <p class="copywrite__des ">© emkiproduction.com 2023</p>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
     <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
     <script src="./assets/js/lang.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/events.js"></script>
 </body>
