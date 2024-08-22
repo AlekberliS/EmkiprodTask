@@ -305,10 +305,10 @@ body{
 }
 
 .slide img {
-  width: 300%;
-  height: auto;
   margin-bottom: -10px;
   border-radius: 10px;
+  width: 150px;
+  height: 200px;
 }
 
 .up .slider {
@@ -318,10 +318,7 @@ body{
 .down .slider {
   animation: slideDown 10s linear infinite;
 }
-.indHave .project{
-  background-color: #151a30;
-  border-radius: 16px;
-}
+
 @keyframes slideUp {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
