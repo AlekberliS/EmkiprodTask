@@ -42,6 +42,11 @@ function updateContent(languageCode) {
                 eventCard.href = post.ticketLink || 'https://iticket.az/en/events/concerts'; 
                 console.log(post.ticketLink)
                 eventCard.target = '_blank';
+
+                const createdDate = new Date(post.created);
+                const formattedDate = createdDate.toLocaleDateString('en-GB', {
+                    day: 'numeric', month: 'short', year: 'numeric'
+                });
                 // eventCard.classList.add('block', 'rounded-lg', 'shadow-lg', 'bg-white', 'overflow-hidden', 'h-auto', 'transform', 'transition-transform', 'hover:scale-105', 'relative');
 
                 eventCard.innerHTML = `
@@ -59,7 +64,7 @@ function updateContent(languageCode) {
                         ${post.artistName}
                     </h2>
                     <p class="py-3  text-base bg-transparent rounded-b-lg">
-                        ${post.place}
+                    ${formattedDate} • ${post.place}
                     </p>
                     
                 </div>
