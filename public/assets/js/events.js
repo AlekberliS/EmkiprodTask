@@ -46,7 +46,7 @@ function updateContent(languageCode) {
 
                 eventCard.innerHTML = `
               
-            <div class="relative flex flex-col gap-1 mb-4 w-350p md:w-375 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
+            <div class="relative flex flex-col gap-1 mb-4 w-350 sm:w-350p md:w-375 mr-5 sm:mr-0 cursor-pointer h-auto bg-transparent rounded-lg shadow-lg group transition-colors group-hover:bg-white duration-300">
                 <div class="relative flex flex-col items-center overflow-hidden rounded-t-lg">
                     <img class="w-375 h-350 object-cover rounded-lg" src="${post.imageSrc}" alt="${post.imageTitle}">
                 <div class="absolute  mx-auto my-36 flex items-center justify-center w-36 h-10 bg-pink-500 text-white text-lg font-bold uppercase rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">

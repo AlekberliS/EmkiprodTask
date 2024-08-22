@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p class="font-medium leading-7">${aboutsContent}</p>
                       </div>
                       <div class="project__right">
-                        <img src="${imageSrc}" class="rounded-lg" alt="${imageTitle}">
+                        <img src="${imageSrc}" class="rounded-lg w-350 md:w-full p-[-8px]" alt="${imageTitle}">
                       </div>
                     </div>
                 `;

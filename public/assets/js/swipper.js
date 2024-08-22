@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
           if (Array.isArray(firstItem.postTranslations) && firstItem.postTranslations.length > 0) {
               const postTranslations = firstItem.postTranslations;
 
-              const swiperWrapper = document.querySelector('.swiper-wrapper');
+              const swiperWrapper = document.querySelector('.mySwiper .swiper-wrapper');
               if (!swiperWrapper) {
                   console.error("Element with class 'swiper-wrapper' not found.");
                   return;
